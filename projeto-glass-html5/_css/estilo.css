@@ -1,12 +1,50 @@
 @charset "UTF-8";
 
 body {
-    background-color: white;
+    background-color: #dddddd;
     color: RGBA(0,0,0,1);
 }
+
+div#interface {
+    width: 1000px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* deslocamento lateral, vertical, espalhamento da sombra e cor. */
+    padding: 10px;
+}
+
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 950px;
+    top: 70px;
+}
+
+header#cabecalho h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px RGBA(0,0,0,0.6);
+    padding: 0;
+    margin-bottom: 0;
+}
+
+header#cabecalho h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #888888;  
+    padding: 0; 
+    margin-top: 0;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;  
+    height: 150px;  
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;   /* adicionando uma imagem no cabeçalho pelo css. Obs: foi utilizado "../" no começo da url para indicar que a imagem está fora da pasta "_css". */
 }
 
 /* Formatação de imagens com legendas */
@@ -55,7 +93,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 400px;
 }
 
 nav#menu li {
