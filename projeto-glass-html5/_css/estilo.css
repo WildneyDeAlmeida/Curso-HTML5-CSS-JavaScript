@@ -39,8 +39,10 @@ a:hover {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 900px;
-    top: 70px;
+    top: 55px;
+    left: auto;
+    right: auto;
+    margin-left: 840px;
 }
 
 header#cabecalho h1 {
@@ -62,8 +64,8 @@ header#cabecalho h2 {
 
 header#cabecalho {
     border-bottom: 1px #606060 solid;  
-    height: 150px;  
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;   /* adicionando uma imagem no cabeçalho pelo css. Obs: foi utilizado "../" no começo da url para indicar que a imagem está fora da pasta "_css". */
+    height: 130px;  
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 70px;   /* adicionando uma imagem no cabeçalho pelo css. Obs: foi utilizado "../" no começo da url para indicar que a imagem está fora da pasta "_css". */
 }
 
 /* Formatação do menu */
@@ -81,7 +83,9 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 400px;
+    left: auto;
+    right: auto;
+    margin-left: 350px;
 }
 
 nav#menu li {
