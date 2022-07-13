@@ -136,6 +136,47 @@ section#corpo {
     padding-right: 15px;
 }
 
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px; /* remove o espaço entre as bordas da tabela */   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;  
+    padding: 10px;  
+    vertical-align: middle;
+    text-align: left;
+}
+
+table#tabelaspec td.colesq {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #606060;
+    vertical-align: top;        /* definições em classe sempre sobrepoe as de componentes simples */
+    text-align: right;          /* definições em classe sempre sobrepoe as de componentes simples */
+}
+
+table#tabelaspec td.coldir {
+    color: #000;
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    color: #000;
+    font-size: 8pt;
+    display: block;            /* será um bloco flutuante que irá se desconectar do texto */
+    float: right;              /* vai ter uma flutuação à direita */ 
+    margin-top: 10px;          /* aumentar a margem do top faz com que o span desça para a base da linha */
+}
+
 aside#lateral {
     display: block;
     width: 425px;
