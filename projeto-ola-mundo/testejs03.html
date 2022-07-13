@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Acenda a lâmpada</title>
+    <script>
+        var quebrada = false;
+        function mudaLampada(tipo) {
+            if (tipo == 1 & quebrada == false){
+                arquivo = "../projeto-glass-html5/_imagens/lampada-acesa.jpg";   
+            }
+            if (tipo == 2 & quebrada == false) {
+                arquivo = "../projeto-glass-html5/_imagens/lampada-apagada.jpg";   
+            }
+            if (tipo == 3 & quebrada == false) {
+                arquivo = "../projeto-glass-html5/_imagens/lampada-quebrada.jpg";  
+                quebrada = true;
+            }
+            document.getElementById("luz").src = arquivo;
+        }
+    </script>
+    <!-- <script>    
+        /* mesma função de forma mais simplificada */
+        var quebrada = false;
+        function mudaLampada(tipo) {
+            if (!quebrada) {
+            document.getElementByid("luz").src = "../projeto-glass-html5/_imagens/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada') {
+                    quebrada = true;
+                }
+            }
+        }
+    </script> -->
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="../projeto-glass-html5/_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)"/>
+    <br/>
+    <!-- <h1>Acenda a lâmpada</h1>
+    <img src="../projeto-glass-html5/_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(lampada-acesa)" onmouseout="mudaLampada(lampada-apagada)" onclick="mudaLampada(lampada-quebrada)"/> -->
+</body>
+</html>
